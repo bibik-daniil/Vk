@@ -65,7 +65,7 @@ body {
     text-align: center;
 }
 
-.lineMiddle>div {
+.lineMiddle>form {
     display: flex;
     background-color: #edeef0;
     border-radius: 5px;
@@ -86,19 +86,19 @@ body {
 }
 
 .lineMiddle>button:hover {
-    background-color: rgb(225, 225, 225);
+    background-color: rgb(242, 242, 242);
 }
 
 .lineMiddle>button>img {
     width: 70%;
 }
 
-.lineMiddle>div:hover {
+.lineMiddle>form:hover {
     background-color: rgb(225, 225, 225);
     
 }
 
-.lineMiddle>div>input {
+.lineMiddle>form>input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ body {
     width: 158px;
 }
 
-.lineMiddle>div>img {
+.lineMiddle>form>img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +131,7 @@ body {
     background-color: transparent;
 }
 
-.lineMiddle>div svg {
+.lineMiddle>form svg {
     color: rgb(153, 162, 173);
     cursor: pointer;
     margin-right: 6px;
@@ -187,14 +187,18 @@ a {
     align-items: center;
 }
 
-.start>a:hover, .settings>div>a:hover, .settings>a:hover{
+.start>a:hover {
     background-color: rgba(143, 143, 143, 0.1); 
+}
+
+.settings>a:hover, .settings>div>a:hover {
+    background-color: rgb(246, 246, 246)
 }
 
 .twoLine{
     display: inline-block;
     text-align: center;
-    width: 551px;
+    width: 27%;
 }
 
 .twoLine>.postButton>div>button {
@@ -212,19 +216,17 @@ a {
 
 .postButton {
     display: flex;
-    width: 543px;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
-    padding-left: 4px;
-    padding-right: 4px;
     align-items: center;
     height: 40px;
 }
 
 .createPost {
-    width: 455px;
+    width: 84%;
     border-right: 1px solid rgb(179, 179, 179);
 }
 
@@ -246,7 +248,7 @@ a {
 }
 
 .newClip>button {
-    width: 36px;
+    width: 7%;
     height: 36px;
     cursor: pointer;
 }
@@ -305,14 +307,14 @@ a {
 
 .myAvatar div {
     display: flex;
-    height: 45px;
+    height: 48px;
     justify-content: end;
     align-items: center;
 
 }
 
 .myAvatar div:hover {
-    background-color: rgb(208, 208, 208);
+    background-color: rgb(242, 242, 242);
 }
 
 .profil>div span {
@@ -396,7 +398,7 @@ a {
 }
 
 .option:hover {
-    background-color: rgb(221, 225, 228);
+    background-color: rgb(247, 247, 247);
 }
 
 .myAvatar {
@@ -456,7 +458,7 @@ a {
     border-radius: 10px;
     width: 15%;
     margin: 20px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .settings button>svg:hover {
@@ -487,6 +489,11 @@ input[type="search"]::-webkit-search-results-decoration {
     }
     .line {
         width: 25%;
+    }
+
+    .line a {
+        width: 45%;
+        margin-right: 0px;
     }
 
     .oneLine {
@@ -527,5 +534,10 @@ input[type="search"]::-webkit-search-results-decoration {
     .twoLine{
     width: 25%;
     }
+
+    .createPost {
+    width: 88%;
+    border-right: 1px solid rgb(179, 179, 179);
+}
 
 }
