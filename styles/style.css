@@ -1,8 +1,24 @@
 body {
     background-color: rgb(234, 234, 234);
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-weight: 400;
 }
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Medium.ttf);
+    font-weight: 500;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../fonts/Roboto-Regular.ttf);
+    font-weight: 400;
+    font-display: swap;
+}
+
 .columnLine {
     background-color: rgb(255, 255, 255);
     display: flex;
@@ -19,7 +35,14 @@ body {
     align-items: center;
 }
 
-.line>img {
+.line a {
+    display: flex;
+    height: 48px;
+    padding: 0px;
+    margin-right: 28px;
+}
+
+.line img {
     width: 23px;
     margin-right: 10px;
 
@@ -38,55 +61,28 @@ body {
     width: 25%;
 }
 
-h1 {
-    margin-top: 7px;
-    margin-bottom: 7px;
-    margin-left: 0;
-    margin-right: 30px;
-    line-height: 30px;
-    display: flex;
-    vertical-align: middle;
-    font-size: 22px;
-    font-family: Arial, Helvetica, sans-serif;
-
-    
-}
-
-.icon {
-    background-color: rgb(0, 145, 255);
-    color: white;
-    border-radius: 20%;
-    padding: 3px ;
-    margin: 4px;
-    width: 18.4px;
-    height: 18.4px;
-    line-height: 18.4px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
 .center {
     text-align: center;
 }
 
 .lineMiddle>div {
     display: flex;
-    background-color: rgb(239, 239, 239);
+    background-color: #edeef0;
     border-radius: 5px;
     align-items: center;
-    height: 30px;
+    height: 32px;
     margin-right: 20px;
 }
 
 .lineMiddle>button {
-    height: 45px;
-    width: 45px;
+    height: 48px;
+    width: 48px;
     background-color: white;
     border: none;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .lineMiddle>button:hover {
@@ -113,6 +109,7 @@ h1 {
     appearance: none;
     box-shadow: none;
     outline: none;
+    width: 158px;
 }
 
 .lineMiddle>div>img {
@@ -124,6 +121,29 @@ h1 {
     margin-left: 10px ;
     margin-right: 5px;
 
+}
+
+.lineMiddle button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+}
+
+.lineMiddle>div svg {
+    color: rgb(153, 162, 173);
+    cursor: pointer;
+    margin-right: 6px;
+    opacity: 1;
+}
+
+.lineMiddle svg:hover {
+    opacity: 0.7;
+}
+
+.lineMiddle input:placeholder-shown + button>svg {
+  opacity: 0;
 }
 
 .fixed {
@@ -143,14 +163,14 @@ h1 {
 .start {
     display: inline-block;
     text-align: start;
-    width: 29%;
+    width: 27%;
     margin-top: 10px;
     margin-right: 10px;
 }
 
 .start>a>svg {
     padding-right: 10px;
-    color: rgb(66, 122, 196);
+    color: #447bba
 }
 
 a {
@@ -162,8 +182,7 @@ a {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 13px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 545;
+    font-weight: 400;
     border-radius: 5px;
     align-items: center;
 }
@@ -175,7 +194,7 @@ a {
 .twoLine{
     display: inline-block;
     text-align: center;
-    width: 28%;
+    width: 551px;
 }
 
 .twoLine>.postButton>div>button {
@@ -184,36 +203,52 @@ a {
     border: none;
     border-radius: 10px;
     background-color: white;
-    color: rgb(88, 158, 202);
+    color: #3770b1
 }
 
 .twoLine>.postButton>div>button:hover {
-    color: rgba(90, 157, 200, 0.695);
+    opacity: 0.7;
 }
 
 .postButton {
     display: flex;
-    width: 100%;
+    width: 543px;
     background-color: white;
     border-radius: 10px;
     padding-top: 2px;
     padding-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
     align-items: center;
     height: 40px;
 }
 
 .createPost {
-    width: 86%;
+    width: 455px;
     border-right: 1px solid rgb(179, 179, 179);
 }
 
-.createPost>button {
+.postButton .createPost>button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Roboto';
+    font-weight: 500;
 }
 
 
 .newClip {
-    width: 7%
+    display: flex;
+}
+
+.newClip>button {
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
 }
 
 .warp {
@@ -231,6 +266,10 @@ a {
     margin-top: 10px;
     background-color: white;
     border-radius: 10px;
+}
+
+.posts button {
+    cursor: pointer;
 }
 
 .profil {
@@ -276,11 +315,10 @@ a {
     background-color: rgb(208, 208, 208);
 }
 
-.profil>div>span {
+.profil>div span {
     display: flex;
     align-items: center;
     margin-left: 10px;
-    font-weight: bold;
 }
 
 .mem>img {
@@ -292,8 +330,8 @@ a {
     margin: 10px;
     padding-left: 10px;
     padding-right: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-family: 'Roboto';
+    font-size: 14px;
 }
 
 .infoProfil {
@@ -301,9 +339,14 @@ a {
     width: 50%;
 }
 
-.infoProfil>span {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+.infoProfil span {
+    font-size: 14px;
+    font-family: 'Roboto';
+    font-weight: 500;
+}
+
+.infoProfil span:hover {
+    text-decoration: underline;
 }
 
 .buttonProfileInPost {
@@ -315,16 +358,19 @@ a {
 
 .subscribe {
     display: flex;
-    height: 25px;
+    width: 118.6px;
+    height: 28px;
     border-radius: 7px;
     border: none;
     align-items: center;
-    font-weight: bold;
-    font-size: 12px;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 14px;
     background-color: rgb(243, 243, 243);
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 10px;
+    justify-content: center;
 }
 
 .subscribe:hover {
@@ -335,14 +381,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
+    width: 44px;
+    height: 44px;
     background-color: white;
     border: none;
     font-weight: bold;
     font-size: 20px;
     margin-right: 10px;
-    border-radius: 20px;
+    border-radius: 22px;
 }
 
 .option>img {
@@ -374,11 +420,11 @@ a {
     align-items: center;
     border: none;
     padding: 0px;
-    color: rgb(173, 173, 173);
+    color: #99a2ad;
 }
 
-.reaction>button>img {
-    width: 20px;
+.reaction>button>svg {
+    width: 24px;
 }
 
 .reaction>button:hover {
@@ -386,11 +432,17 @@ a {
 }
 
 
-.reaction>span {
-    color: rgb(169, 169, 169);
+.reaction span {
+    color: #99a2ad;
+    font-family: 'Roboto';
+    font-weight: 500;
     font-size: 14px;
-    padding-left: 7px;
+    padding-left: 4px;
     padding-right: 20px;
+}
+
+.timeOfPublication a span:hover {
+    text-decoration-line: underline;
 }
 
 .threeLine {
@@ -416,11 +468,15 @@ a {
     padding-bottom: 10px;
     margin-top: 3px;
     margin-bottom: 3px;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-
-
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
 
 @media (max-width: 1920px) {
     .warp .twoLine{
