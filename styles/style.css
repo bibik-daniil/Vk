@@ -65,7 +65,7 @@ body {
     text-align: center;
 }
 
-.lineMiddle>form {
+.lineMiddle>div {
     display: flex;
     background-color: #edeef0;
     border-radius: 5px;
@@ -93,12 +93,12 @@ body {
     width: 70%;
 }
 
-.lineMiddle>form:hover {
+.lineMiddle>div:hover {
     background-color: rgb(225, 225, 225);
     
 }
 
-.lineMiddle>form>input {
+.lineMiddle>div>input {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -112,7 +112,7 @@ body {
     width: 158px;
 }
 
-.lineMiddle>form>img {
+.lineMiddle>div>img {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -131,7 +131,7 @@ body {
     background-color: transparent;
 }
 
-.lineMiddle>form svg {
+.lineMiddle>div svg {
     color: rgb(153, 162, 173);
     cursor: pointer;
     margin-right: 6px;
@@ -465,11 +465,18 @@ a {
     opacity: 0.7
 }
 
-.settings>div>a, .settings>a {
+.settings>div>a {
     padding-top: 10px;
     padding-bottom: 10px;
     margin-top: 3px;
     margin-bottom: 3px;
+    font-size: 13px;
+}
+
+.settings>a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 3px;
     font-size: 13px;
 }
 
@@ -528,7 +535,7 @@ input[type="search"]::-webkit-search-results-decoration {
     .settings {
     width: 23%;
     margin: 20px;
-    padding: 10px;
+    padding: 8px;
     }
 
     .twoLine{
