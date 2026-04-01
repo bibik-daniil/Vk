@@ -303,6 +303,7 @@ a {
     background-color: transparent;
     border: none;
     color: rgb(162, 161, 161);
+    cursor: pointer;
 }
 
 .myAvatar div {
@@ -406,6 +407,7 @@ a {
     align-items: center;
     justify-content: end;
     width: 10%;
+    cursor: pointer;
 }
 
 .reaction {
@@ -463,6 +465,10 @@ a {
 
 .settings button>svg:hover {
     opacity: 0.7
+}
+
+.settings button {
+    cursor: pointer;
 }
 
 .settings>div>a {
