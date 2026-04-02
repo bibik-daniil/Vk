@@ -311,7 +311,7 @@ a {
     height: 48px;
     justify-content: end;
     align-items: center;
-
+    cursor: pointer;
 }
 
 .myAvatar div:hover {
@@ -407,7 +407,7 @@ a {
     align-items: center;
     justify-content: end;
     width: 10%;
-    cursor: pointer;
+    
 }
 
 .reaction {
